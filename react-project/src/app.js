@@ -10,7 +10,7 @@ const editedHobbies = hobbies.map((item) => ({item: item}))
 console.log(editedHobbies);
 // expected output: [{item: 'sports'}, {item: 'cooking'}, {item: 'music'}]
 
-function transformToObjects(numberArray) {
+export function transformToObjects(numberArray) {
     const numberObject = numberArray.map((number) => ({value: number}));
     return numberObject;
  }
