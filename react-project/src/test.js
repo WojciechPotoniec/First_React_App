@@ -77,3 +77,16 @@ const productOfNumber = arrayNumbers.reduce((previousValue, currentNumber) => pr
 
 console.log(productOfNumber);
 // Expected output è 144 perchè la moltiplicazione avviene partendo dal primo elemento finche non finiscono. in questo caso senza valore iniziale passato alla fine perchè si tratta di una moltiplicazione altrimenti avremmo passato lo 0
+
+
+// concat() - Unire array
+// Esercizio: Dati due array di numeri, uniscili in un unico array.
+
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+
+const arraysum = array1.concat(array2);
+
+console.log(arraysum);
+// Expected output [1, 2, 3, 4, 5, 6] con il metodo .concat semplicemente concateniamo i due array tra di loro creandone uno nuovo
+
