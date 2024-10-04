@@ -33,12 +33,24 @@ export function transformToObjects(numberArray) {
  console.log(mergedText);
 
 
- // map() - Trasformazione degli elementi
-// Esercizio: Dato un array di stringhe che rappresentano nomi, trasforma ogni nome in maiuscolo.
+// map() - Trasformazione degli elementi
+// Esercizio: Dato un array di stringhe che rappresentano nomi, trasforma ogni nome in maiuscolo. 
 
 const names = ['mario', 'luigi', 'peach', 'bowser'];
 
-
 const capitalizedNames = names.map((name) => name.charAt().toUpperCase() + name.slice(1));
-
 console.log(capitalizedNames);
+
+
+// find() - Trovare un elemento
+// Esercizio: Dato un array di oggetti che rappresentano prodotti, trova il prodotto con il prezzo uguale a 100.
+
+const products = [
+    { name: 'Smartphone', price: 300 },
+    { name: 'Cuffie', price: 50 },
+    { name: 'Tastiera', price: 100 }
+  ];
+
+  const findedProduct = products.find((product) => product.price === 100);
+
+  console.log(findedProduct);
