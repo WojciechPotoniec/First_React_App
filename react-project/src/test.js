@@ -68,6 +68,7 @@ const evenNumber = numbers.findIndex((number) => number % 2 === 0);
 console.log(evenNumber);
 // Expected output è 3 perchè trova l'indice del numero all'interno dell'array che diviso per 2 porta come risultato 0 quindi risulta un numero pari.
 
+
 // reduce() - Accumulare i valori
 // Esercizio: Dato un array di numeri, trova il prodotto di tutti i numeri (moltiplicali tra di loro).
 
@@ -90,3 +91,29 @@ const arraysum = array1.concat(array2);
 console.log(arraysum);
 // Expected output [1, 2, 3, 4, 5, 6] con il metodo .concat semplicemente concateniamo i due array tra di loro creandone uno nuovo
 
+
+
+// slice() - Estrarre una porzione di un array
+// Esercizio: Dato un array di lettere, estrai solo le lettere da indice 2 a 4 (inclusi).
+
+const letter = ['a', 'b', 'c', 'd', 'e', 'f'];
+
+const filterLetters = letter.slice(2, 5);
+console.log(filterLetters);
+
+//Expected output [c, d, e] con il metodo slice possiamo derminare a da quale indice partire e a quale finire per estrarre gli elementi in un nuovo array
+
+
+// splice() - Modificare un array
+// Esercizio: Dato un array di numeri, rimuovi i primi 2 elementi e inserisci al loro posto i numeri 10 e 20.
+
+const numeri = [1, 2, 3, 4, 5];
+
+
+console.log(numeri);
+const eliminatedElement = numeri.splice(0, 2, 10, 20);
+console.log(eliminatedElement);
+// expected output is [1, 2] sono gli elementi eliminati dall'array originale
+
+console.log(numeri);
+// expected output [10, 20, 3, 4, 5] si tratta dell'array originale che è stato modificato dal metodo splice
