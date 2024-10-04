@@ -54,3 +54,12 @@ const products = [
   const findedProduct = products.find((product) => product.price === 100);
 
   console.log(findedProduct);
+
+// findIndex() - Trovare l'indice di un elemento
+// Esercizio: Dato un array di numeri, trova l'indice del primo numero pari.
+
+const numbers = [5, 3, 7, 6, 8];
+
+const evenNumber = numbers.findIndex((number) => number % 2 === 0);
+
+console.log(evenNumber);
